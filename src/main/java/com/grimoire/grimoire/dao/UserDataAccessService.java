@@ -6,7 +6,7 @@ import java.util.Optional;
 import java.util.UUID;
 import org.springframework.stereotype.Repository;
 
-@Repository("postgres")
+@Repository("postgres") // This service is for the actual postgres database
 public class UserDataAccessService implements UserDao {
 
   @Override
