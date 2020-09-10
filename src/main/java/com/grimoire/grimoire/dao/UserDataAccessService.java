@@ -16,7 +16,7 @@ public class UserDataAccessService implements UserDao {
 
   @Override
   public List<User> selectAllUsers() {
-    return null;
+    return List.of(new User(UUID.randomUUID(), "From PSQL DB", "psql@postgres.com", "password1"));
   }
 
   @Override
